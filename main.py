@@ -98,7 +98,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments")
 
 
-# db.create_all()  # Create all the tables in the database
+db.create_all()  # Create all the tables in the database
 # ###############        CONFIGURE TABLES       #################  #
 
 
